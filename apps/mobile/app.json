@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "SANJEEVANI",
+    "slug": "sanjeevani",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#06469B"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#06469B"
+      },
+      "package": "in.gov.maharashtra.sanjeevani",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "scheme": "sanjeevani",
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "apiUrl": "http://localhost:3002/api/v1",
+      "eas": {
+        "projectId": "sanjeevani-sih2026"
+      }
+    }
+  }
+}

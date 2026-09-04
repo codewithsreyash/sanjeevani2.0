@@ -1,0 +1,29 @@
+{
+  "name": "sanjeevani",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanjeevani - Connected Public Healthcare Coordination Platform for Rural & Underserved Areas",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:mobile": "npm run start --workspace=@sanjeevani/mobile",
+    "dev:api": "npm run start:dev --prefix apps/api",
+    "dev:ai": "cd apps/ai-service && uvicorn app.main:app --reload --port 8000",
+    "build:api": "npm run build --prefix apps/api",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "medtech",
+    "healthtech",
+    "react-native",
+    "expo",
+    "nestjs",
+    "fastapi",
+    "sanjeevani",
+    "sih2026"
+  ],
+  "author": "Smart India Hackathon Team",
+  "license": "MIT"
+}
